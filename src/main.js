@@ -22,6 +22,9 @@ http
       res.end();
       return;
     }
+
+    res.statusCode = 404;
+    res.end("Not found");
   })
   .listen(8000, () => {
     console.log("Servidor está rodando na porta 8000");
